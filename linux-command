@@ -1,0 +1,78 @@
+Linux is Unix-like operating system like mac and ubantu is based on linux
+1)Pwd: represents current directory we are currently at
+2).  one folder back
+3)Two folder back cd ../..
+4)cd ~: any directory to comeback to home direactory
+5) cd / : refering to root directory 
+6) ls -lh : tells which permission are allowed like read write,owener
+total 100K
+drwxr-xr-x 1 HP 197121    0 Nov 15  2023  CSS/
+drwxr-xr-x 1 HP 197121    0 Jun  5 17:00  DSA/
+drwxr-xr-x 1 HP 197121    0 Aug 24  2023  Deploymet/
+drwxr-xr-x 1 HP 197121    0 Oct 20  2023  Expressjs/
+drwxr-xr-x 1 HP 197121    0 Jul 22 13:55  FullStack/
+drwxr-xr-x 1 HP 197121    0 Dec 18  2023  Javascript/
+7)mkdir folder_name  create folder
+7)touch file_name create file with name
+8) $ cat demo.txt  read the content of file
+good kirtikumar
+9) rm demo.txt delete file
+10) $ rmdir demo_folder  delete folder if that folder does not consist of any folder 
+11) rmdir demo it will delete folder even if it has sub folder
+12)rm -rf  folder_name deletes folder forefully does not give warning so avoid it because if you do rm -rf  /  it will delete operating also. Use in sub folder with care
+Playing with vim
+Note vim is one of that provide editable interface alternative is nano
+1)	Vim text.txt if that file exists it will open that file otherwise it will create file with that name and opens
+Existing from vim
+I)Ctrl + c + : + qa 2) esc+  :  + q 
+instead of vim we can write vi text.txt
+2)	Initially when we open any file inside vim then it is not inside editable mode we can not edit it. To enable edit we need to press “I”. I for insert. After editing inorder to save the file we will do
+Ctrl + c + : + wq
+To remember vim commands there is game called vim adventure
+     	
+3)	Delete the line, stay in normal mode not insert and press dd(double d)
+4)	gg: normal mode cursor will come on top left corner
+5)	G(capital G): cursor will come to last line
+6)	6)w: normal mode jump one word
+7)	2w: jump 2 word and so on
+8)	yy(double y): normal mode copy whole line 
+9)	p(single p): normal mode paste that copied line anywhere any time 
+10)	copy-paste we can copy from browser staying in readonly mode or normal mode and can paste in vim terminal using just p. then hit enter type ctrl+c and wq! 
+In insert mode you need to use mouse right click only
+11)	Delete all lines from file  :%d
+12)	Undo: go in normal mode and press u
+13)	vim ~/.vimrc  this is configuration file vim where we configure like theme tabing numbers etc
+14)	printing last few lines
+  tail file_name
+tail -n 3 code.txt here we are printing only last 3 lines. 
+Why tails is important than cat because suppose we are saving logs in one of the file 
+Then that file may have lakhs of line so searching in that is difficult so we can ask for last 100 lines of logs using this command
+Same like tail there is head command is there also
+13)printing on terminal
+echo "kirtikumar"
+kirtikumar
+echo is like print command
+14)dumming 
+For dumping we use > 
+echo “kirtikumar” > name.txt
+here echo will not print whatever the result we get from left side of > it will dump in right
+ 
+Another example
+ 
+Here result of ls is not printed immediately we are dumping in new file
+Suppose I want to dump the next things below of same file like append we can do it by >>
+ 
+15)Searching in files and piping
+Piping is denoted by “|” 
+X | Y whatever the result of X gives to Y and perform whtever the  Y considering X as a input
+ 
+ls will give files or folder inside current folder. Then there is piping so this list of files acts as a input
+grep: commonly used commands for text searching, filtering, and extracting in the terminal.
+So serach in file which contains vi it is  substring search
+16)combing different commands : in order to combine different commands we can use && logical and operator
+17)copy from one file to another
+ 
+
+	If there is same folder we direactly give path as
+	cp x.txt y.txt
+18) for cut paste file you can use command mv
